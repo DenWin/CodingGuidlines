@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: SQL-TEST-001
+    level: MUST
+    text: "Follow `../../common/tdd_bdd.yml` before applying database-specific testing practices."
+  - id: SQL-TEST-002
+    level: SHOULD
+    text: "Write automated database tests to validate schema changes and stored procedures."
+  - id: SQL-TEST-003
+    level: MUST
+    text: "Use transactional tests that roll back changes after assertions."
+  - id: SQL-TEST-004
+    level: SHOULD
+    text: "Populate test data sets deterministically to ensure repeatability."
+  - id: SQL-TEST-005
+    level: MUST
+    text: "Verify execution plans for critical queries in performance-sensitive paths."
+  - id: SQL-TEST-006
+    level: SHOULD
+    text: "Automate migration validation in CI before deploying to shared environments."
+

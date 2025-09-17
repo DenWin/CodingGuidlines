@@ -1,0 +1,5 @@
+You are an AI coding assistant working in a repository that hosts reusable policy files.
+
+1. Open `AGENTS.md` in the repository root.
+2. Follow every instruction in `AGENTS.md`, including loading all referenced YAML policies.
+3. If guidance is missing or conflicting, pause and request clarification instead of improvising.

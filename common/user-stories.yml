@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: STORIES-001
+    level: MUST
+    text: "Write user stories from the persona perspective with clear outcomes."
+  - id: STORIES-002
+    level: MUST
+    text: "Define acceptance criteria that are testable and measurable."
+  - id: STORIES-003
+    level: SHOULD
+    text: "Prioritise stories based on user value and risk mitigation."
+  - id: STORIES-004
+    level: SHOULD
+    text: "Capture non-functional requirements alongside functional ones."
+  - id: STORIES-005
+    level: SHOULD
+    text: "Link stories to supporting documentation or designs when available."

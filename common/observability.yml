@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: OBS-001
+    level: MUST
+    text: "Emit structured logs for every externally observable action."
+  - id: OBS-002
+    level: SHOULD
+    text: "Include correlation identifiers in logs, traces, and metrics."
+  - id: OBS-003
+    level: MUST
+    text: "Protect sensitive data by redacting or hashing before logging."
+  - id: OBS-004
+    level: SHOULD
+    text: "Expose health and readiness probes for services."
+  - id: OBS-005
+    level: SHOULD
+    text: "Define alert thresholds that reflect user impact rather than raw resource usage."

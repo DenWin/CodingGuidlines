@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: CSHARP-ARCH-001
+    level: MUST
+    text: "Apply `../../common/architecture.yml` principles before adding C#-specific architecture guidance."
+  - id: CSHARP-ARCH-002
+    level: MUST
+    text: "Separate application, domain, and infrastructure layers with clear interfaces."
+  - id: CSHARP-ARCH-003
+    level: SHOULD
+    text: "Use dependency injection containers for service wiring instead of manual factories."
+  - id: CSHARP-ARCH-004
+    level: MUST
+    text: "Keep Entity Framework entities decoupled from API contracts via DTOs."
+  - id: CSHARP-ARCH-005
+    level: SHOULD
+    text: "Prefer asynchronous controllers and handlers for IO-bound operations."
+  - id: CSHARP-ARCH-006
+    level: MUST
+    text: "Version public APIs and maintain compatibility for active integrations."
+

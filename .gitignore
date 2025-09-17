@@ -1,0 +1,21 @@
+# IDE settings
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Temporary and cache files
+*.tmp
+.tmp/
+tmp/
+
+# Backup and editor swap files
+*.bak
+*.swp
+*.swo
+.backup/
+
+# OS metadata
+.DS_Store
+Thumbs.db

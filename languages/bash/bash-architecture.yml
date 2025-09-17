@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: BASH-ARCH-001
+    level: MUST
+    text: "Apply `../../common/architecture.yml` principles before Bash-specific orchestration patterns."
+  - id: BASH-ARCH-002
+    level: SHOULD
+    text: "Compose complex workflows from smaller scripts or functions to aid reuse."
+  - id: BASH-ARCH-003
+    level: MUST
+    text: "Separate configuration data from executable logic where feasible."
+  - id: BASH-ARCH-004
+    level: SHOULD
+    text: "Use trap handlers to clean up resources on exit signals."
+  - id: BASH-ARCH-005
+    level: MUST
+    text: "Design scripts to be idempotent when rerun with the same inputs."
+  - id: BASH-ARCH-006
+    level: SHOULD
+    text: "Prefer declarative tooling (e.g. Makefiles) for orchestration when available."
+

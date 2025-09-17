@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: SQL-SEC-001
+    level: MUST
+    text: "Apply `../../common/compliance.yml` controls before database-specific security measures."
+  - id: SQL-SEC-002
+    level: MUST
+    text: "Use parametrised queries or stored procedures to avoid injection attacks."
+  - id: SQL-SEC-003
+    level: MUST
+    text: "Restrict database permissions to the minimum required roles."
+  - id: SQL-SEC-004
+    level: SHOULD
+    text: "Encrypt sensitive data at rest using database-native features."
+  - id: SQL-SEC-005
+    level: MUST
+    text: "Sanitise dynamic SQL fragments and whitelist allowable identifiers."
+  - id: SQL-SEC-006
+    level: SHOULD
+    text: "Audit access to high-risk tables and views."
+

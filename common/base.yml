@@ -1,0 +1,20 @@
+version: 0.0.1
+rules:
+  - id: BASE-001
+    level: MUST
+    text: "Apply all referenced policies before implementing any change."
+  - id: BASE-002
+    level: MUST
+    text: "Structure code so each module has a single, well-defined responsibility."
+  - id: BASE-003
+    level: SHOULD
+    text: "Favor readability and clear intent over clever or compact constructs."
+  - id: BASE-004
+    level: MUST
+    text: "Validate inputs and fail fast when encountering invalid states."
+  - id: BASE-005
+    level: SHOULD
+    text: "Encapsulate side effects behind explicit interfaces."
+  - id: BASE-006
+    level: MUST
+    text: "Leave the codebase cleaner than found by addressing related minor issues."

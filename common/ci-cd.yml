@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: CICD-001
+    level: MUST
+    text: "Keep build pipelines reproducible and runnable without manual steps."
+  - id: CICD-002
+    level: MUST
+    text: "Fail the pipeline on test or quality gate regressions without manual overrides."
+  - id: CICD-003
+    level: SHOULD
+    text: "Cache dependencies securely to minimise build times without sacrificing integrity."
+  - id: CICD-004
+    level: MUST
+    text: "Publish build artefacts with immutable version identifiers."
+  - id: CICD-005
+    level: SHOULD
+    text: "Automate security and compliance scans within the deployment workflow."

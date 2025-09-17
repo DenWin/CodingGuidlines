@@ -1,0 +1,18 @@
+version: 0.0.1
+rules:
+  - id: CSHARP-SEC-001
+    level: MUST
+    text: "Apply `../../common/compliance.yml` controls before C#-specific security measures."
+  - id: CSHARP-SEC-002
+    level: MUST
+    text: "Use parameterised queries or ORM safeguards to prevent injection."
+  - id: CSHARP-SEC-003
+    level: MUST
+    text: "Validate model binding inputs and enforce data annotations server-side."
+  - id: CSHARP-SEC-004
+    level: SHOULD
+    text: "Use ASP.NET Core data protection APIs for encryption and key management."
+  - id: CSHARP-SEC-005
+    level: SHOULD
+    text: "Enable antiforgery tokens for state-changing HTTP endpoints."
+

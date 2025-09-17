@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: PS-ARCH-001
+    level: MUST
+    text: "Apply `../../common/architecture.yml` principles before PowerShell-specific architecture guidance."
+  - id: PS-ARCH-002
+    level: SHOULD
+    text: "Package reusable code as modules instead of copying script blocks between files."
+  - id: PS-ARCH-003
+    level: MUST
+    text: "Separate orchestration scripts from functions implementing core logic."
+  - id: PS-ARCH-004
+    level: SHOULD
+    text: "Use configuration data files (JSON, PSD1) rather than hardcoding environment values."
+  - id: PS-ARCH-005
+    level: MUST
+    text: "Design scripts to support non-interactive execution for automation."
+  - id: PS-ARCH-006
+    level: SHOULD
+    text: "Provide verbose and debug output switches for diagnostic purposes."
+

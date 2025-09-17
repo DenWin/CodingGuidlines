@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: SQL-STYLE-001
+    level: MUST
+    text: "Apply `../../common/base.yml` guidance before database-specific style conventions."
+  - id: SQL-STYLE-002
+    level: MUST
+    text: "Use uppercase for SQL keywords and snake_case for identifiers unless standards differ."
+  - id: SQL-STYLE-003
+    level: SHOULD
+    text: "Format queries with aligned SELECT columns and clauses for readability."
+  - id: SQL-STYLE-004
+    level: MUST
+    text: "Alias tables meaningfully when joins are present."
+  - id: SQL-STYLE-005
+    level: SHOULD
+    text: "Avoid SELECT * in production code; list required columns."
+  - id: SQL-STYLE-006
+    level: SHOULD
+    text: "Document complex queries with inline comments summarising intent."
+

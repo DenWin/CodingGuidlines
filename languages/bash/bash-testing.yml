@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: BASH-TEST-001
+    level: MUST
+    text: "Follow `../../common/tdd_bdd.yml` before applying Bash-specific testing practices."
+  - id: BASH-TEST-002
+    level: SHOULD
+    text: "Write automated tests using Bats or the team-standard framework."
+  - id: BASH-TEST-003
+    level: MUST
+    text: "Mock external commands and environment variables in tests."
+  - id: BASH-TEST-004
+    level: SHOULD
+    text: "Verify error paths by asserting on exit codes and stderr output."
+  - id: BASH-TEST-005
+    level: MUST
+    text: "Keep tests hermetic by avoiding reliance on global system state."
+  - id: BASH-TEST-006
+    level: SHOULD
+    text: "Document test setup steps in the repository README or script header."
+

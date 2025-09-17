@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: CSHARP-STYLE-001
+    level: MUST
+    text: "Apply `../../common/base.yml` guidance before enforcing C#-specific style rules."
+  - id: CSHARP-STYLE-002
+    level: MUST
+    text: "Follow .NET naming conventions for namespaces, types, and members."
+  - id: CSHARP-STYLE-003
+    level: SHOULD
+    text: "Use expression-bodied members only when the body remains trivial."
+  - id: CSHARP-STYLE-004
+    level: MUST
+    text: "Place nullable reference annotations consistently across public APIs."
+  - id: CSHARP-STYLE-005
+    level: SHOULD
+    text: "Prefer `var` when the inferred type is obvious and aids readability."
+  - id: CSHARP-STYLE-006
+    level: SHOULD
+    text: "Organise usings with system directives first and remove unused imports."
+

@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: BASH-STYLE-001
+    level: MUST
+    text: "Apply `../../common/base.yml` guidance before Bash-specific style conventions."
+  - id: BASH-STYLE-002
+    level: MUST
+    text: "Start scripts with `#!/usr/bin/env bash` and `set -euo pipefail` when safe."
+  - id: BASH-STYLE-003
+    level: MUST
+    text: "Quote variable expansions to avoid word splitting unless explicitly needed."
+  - id: BASH-STYLE-004
+    level: SHOULD
+    text: "Use functions to encapsulate logical units instead of long linear scripts."
+  - id: BASH-STYLE-005
+    level: SHOULD
+    text: "Prefer `$(...)` command substitution over backticks."
+  - id: BASH-STYLE-006
+    level: SHOULD
+    text: "Document script usage with a help function or comment header."
+

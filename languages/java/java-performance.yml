@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: JAVA-PERF-001
+    level: MUST
+    text: "Apply `../../common/performance.yml` budgets and practices before Java-specific tuning."
+  - id: JAVA-PERF-002
+    level: SHOULD
+    text: "Prefer streams for bulk operations only when they do not obscure complexity."
+  - id: JAVA-PERF-003
+    level: MUST
+    text: "Reuse thread pools provided by the runtime instead of creating unmanaged threads."
+  - id: JAVA-PERF-004
+    level: SHOULD
+    text: "Profile JVM memory usage before tuning garbage collection settings."
+  - id: JAVA-PERF-005
+    level: MUST
+    text: "Close IO resources deterministically using try-with-resources."
+  - id: JAVA-PERF-006
+    level: SHOULD
+    text: "Prefer immutable data structures for shared-read workloads to reduce locking."
+

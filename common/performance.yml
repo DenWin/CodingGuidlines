@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: PERF-001
+    level: MUST
+    text: "Establish performance budgets and validate changes against them."
+  - id: PERF-002
+    level: SHOULD
+    text: "Prefer algorithms with proven complexity bounds over ad-hoc optimisations."
+  - id: PERF-003
+    level: MUST
+    text: "Measure before optimising to avoid premature micro-optimisations."
+  - id: PERF-004
+    level: SHOULD
+    text: "Design for scalability by avoiding single-threaded bottlenecks."
+  - id: PERF-005
+    level: MAY
+    text: "Use feature flags to roll out performance-sensitive features gradually."

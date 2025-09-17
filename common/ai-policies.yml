@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: AI-001
+    level: MUST
+    text: "Disclose AI-generated contributions in commit messages or review notes."
+  - id: AI-002
+    level: MUST
+    text: "Validate AI output with automated tests or manual review before submission."
+  - id: AI-003
+    level: SHOULD
+    text: "Prefer deterministic prompts that reference repository policies explicitly."
+  - id: AI-004
+    level: MUST NOT
+    text: "Do not allow AI tools to access production data or credentials."
+  - id: AI-005
+    level: SHOULD
+    text: "Capture discovered policy gaps so maintainers can extend the guidelines."

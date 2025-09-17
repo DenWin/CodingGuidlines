@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: JAVA-ARCH-001
+    level: MUST
+    text: "Apply `../../common/architecture.yml` principles before adding Java-specific architecture choices."
+  - id: JAVA-ARCH-002
+    level: MUST
+    text: "Separate API, service, and persistence layers with explicit interfaces."
+  - id: JAVA-ARCH-003
+    level: SHOULD
+    text: "Use Spring Boot auto-configuration responsibly by overriding defaults only when necessary."
+  - id: JAVA-ARCH-004
+    level: MUST
+    text: "Keep domain logic free of framework annotations where feasible."
+  - id: JAVA-ARCH-005
+    level: SHOULD
+    text: "Expose asynchronous workloads through managed executors or messaging platforms."
+  - id: JAVA-ARCH-006
+    level: MUST
+    text: "Version REST APIs and maintain backward compatibility for active consumers."
+

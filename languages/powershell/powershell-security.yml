@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: PS-SEC-001
+    level: MUST
+    text: "Apply `../../common/compliance.yml` controls before PowerShell-specific security practices."
+  - id: PS-SEC-002
+    level: MUST
+    text: "Sign scripts intended for distribution or execution in production."
+  - id: PS-SEC-003
+    level: MUST
+    text: "Avoid plaintext credentials; use `Get-Credential` or secret management modules."
+  - id: PS-SEC-004
+    level: SHOULD
+    text: "Validate all external input, including command-line arguments and pipeline data."
+  - id: PS-SEC-005
+    level: MUST NOT
+    text: "Do not disable execution policy as a workaround for missing signatures."
+  - id: PS-SEC-006
+    level: SHOULD
+    text: "Log privileged operations with sufficient detail for auditing."
+

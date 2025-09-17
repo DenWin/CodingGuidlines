@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: ARCH-001
+    level: MUST
+    text: "Preserve established architectural boundaries and layering constraints."
+  - id: ARCH-002
+    level: MUST
+    text: "Document significant architectural decisions in ADRs or equivalent records."
+  - id: ARCH-003
+    level: SHOULD
+    text: "Design components for testability through clear seams and dependency inversion."
+  - id: ARCH-004
+    level: SHOULD
+    text: "Prefer stateless or idempotent services unless state is explicitly required."
+  - id: ARCH-005
+    level: MUST
+    text: "Align data contracts with published schemas and version them responsibly."

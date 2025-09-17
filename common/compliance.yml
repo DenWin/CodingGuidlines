@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: COMP-001
+    level: MUST
+    text: "Classify data handled by the system and apply required safeguards."
+  - id: COMP-002
+    level: MUST
+    text: "Do not commit secrets or regulated data to source control."
+  - id: COMP-003
+    level: SHOULD
+    text: "Log access to sensitive operations for auditability."
+  - id: COMP-004
+    level: MUST
+    text: "Follow jurisdiction-specific retention and deletion policies."
+  - id: COMP-005
+    level: SHOULD
+    text: "Consult legal or compliance teams before introducing third-party services."

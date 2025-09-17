@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: PS-TEST-001
+    level: MUST
+    text: "Follow `../../common/tdd_bdd.yml` before applying PowerShell-specific testing practices."
+  - id: PS-TEST-002
+    level: MUST
+    text: "Use Pester for unit and integration testing of scripts and modules."
+  - id: PS-TEST-003
+    level: MUST
+    text: "Mock external commands and environment interactions in tests."
+  - id: PS-TEST-004
+    level: SHOULD
+    text: "Name Pester tests using `Describe` and `It` blocks that explain behaviour."
+  - id: PS-TEST-005
+    level: SHOULD
+    text: "Keep tests idempotent and free from machine-specific dependencies."
+  - id: PS-TEST-006
+    level: SHOULD
+    text: "Use `Should -Throw` and `Should -Not` assertions to cover error handling."
+

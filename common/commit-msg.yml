@@ -1,0 +1,23 @@
+version: 0.0.1
+rules:
+  - id: COMMIT-001
+    level: MUST
+    text: "Separate the subject line from the body with a blank line."
+  - id: COMMIT-002
+    level: MUST
+    text: "Limit the subject line to 50 characters or fewer."
+  - id: COMMIT-003
+    level: MUST
+    text: "Capitalize the first letter of the subject line."
+  - id: COMMIT-004
+    level: MUST NOT
+    text: "End the subject line with a period."
+  - id: COMMIT-005
+    level: MUST
+    text: "Use the imperative mood in the subject line."
+  - id: COMMIT-006
+    level: MUST
+    text: "Wrap commit body text at roughly 72 characters per line."
+  - id: COMMIT-007
+    level: SHOULD
+    text: "Explain what changed and why in the body, omitting low-level implementation detail."

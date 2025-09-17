@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: BASH-SEC-001
+    level: MUST
+    text: "Apply `../../common/compliance.yml` controls before Bash-specific security practices."
+  - id: BASH-SEC-002
+    level: MUST
+    text: "Validate user-supplied input before executing commands."
+  - id: BASH-SEC-003
+    level: MUST NOT
+    text: "Do not use eval unless there is no safer alternative."
+  - id: BASH-SEC-004
+    level: SHOULD
+    text: "Use whitelists or allowlists when validating command arguments."
+  - id: BASH-SEC-005
+    level: MUST
+    text: "Avoid sourcing files from writable directories at runtime."
+  - id: BASH-SEC-006
+    level: SHOULD
+    text: "Drop privileges before executing dangerous operations when possible."
+

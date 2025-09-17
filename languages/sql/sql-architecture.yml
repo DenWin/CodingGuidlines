@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: SQL-ARCH-001
+    level: MUST
+    text: "Apply `../../common/architecture.yml` principles before database-specific architecture decisions."
+  - id: SQL-ARCH-002
+    level: MUST
+    text: "Normalise schemas to the agreed level unless denormalisation is justified."
+  - id: SQL-ARCH-003
+    level: SHOULD
+    text: "Design primary keys as stable, unique identifiers and avoid natural keys when volatile."
+  - id: SQL-ARCH-004
+    level: MUST
+    text: "Version database schema changes using migrations tracked in source control."
+  - id: SQL-ARCH-005
+    level: SHOULD
+    text: "Define indexes based on workload analysis and maintain them proactively."
+  - id: SQL-ARCH-006
+    level: MUST
+    text: "Separate OLTP and analytics workloads to prevent resource contention."
+

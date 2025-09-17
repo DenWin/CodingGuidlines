@@ -1,0 +1,18 @@
+version: 0.0.1
+rules:
+  - id: JAVA-STYLE-001
+    level: MUST
+    text: "Apply `../../common/base.yml` guidance before enforcing Java-specific style rules."
+  - id: JAVA-STYLE-002
+    level: MUST
+    text: "Follow standard Java naming conventions for classes, methods, and constants."
+  - id: JAVA-STYLE-003
+    level: SHOULD
+    text: "Use builder patterns or constructors for object creation instead of telescoping setters."
+  - id: JAVA-STYLE-004
+    level: MUST
+    text: "Annotate overrides with `@Override` for clarity and compile-time checks."
+  - id: JAVA-STYLE-005
+    level: SHOULD
+    text: "Prefer `var` only in local scopes where the inferred type is obvious."
+

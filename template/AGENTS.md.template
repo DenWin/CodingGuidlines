@@ -1,0 +1,46 @@
+# Agent Manifest
+
+## Project Context
+- Repository: <name>
+- Domain: <business area>
+- Primary language(s): <language list>
+- Critical constraints: <compliance/performance/etc>
+
+## Workflow Expectations
+1. Read every policy listed below before executing tasks.
+2. Cite rule identifiers (e.g. `BASE-001`) when making decisions informed by these policies.
+3. Escalate when guidance is missing, ambiguous, or conflicts with real-world constraints.
+
+## Policy File Format
+Policies in this repository follow a common schema:
+```yaml
+version: 0.0.1
+rules:
+  - id: <DOMAIN>-<NNN>
+    level: MUST|MUST NOT|REQUIRED|SHALL|SHALL NOT|SHOULD|SHOULD NOT|RECOMMENDED|MAY|OPTIONAL
+    text: "<Short imperative rule>"
+```
+Keep rationale out of the YAML to save prompt tokens; document reasoning in the READMEs instead.
+
+## Relevant Policies
+<!-- Keep this list lean; include only what the project actually uses. -->
+- https://github.com/<org>/CodingGuidlines/blob/main/common/base.yml
+- https://github.com/<org>/CodingGuidlines/blob/main/common/<select-other>.yml
+- https://github.com/<org>/CodingGuidlines/blob/main/common/tdd_bdd.yml
+- https://github.com/<org>/CodingGuidlines/blob/main/common/ai-todo-intake.md
+- https://github.com/<org>/CodingGuidlines/blob/main/languages/<language>/<language>-style.yml
+- https://github.com/<org>/CodingGuidlines/blob/main/languages/<language>/<language>-security.yml
+- ...
+
+## TODO Intake
+Adopt `common/ai-todo-intake.md` before selecting work:
+- Parse `ToDo.md` for backlog entries by scanning `### ID: <ID>` headings and the associated fields (`**Title:**`, `**Description:**`, `**Acceptance Criteria:**`, `**Priority:**`, `**Status:**`, `**Notes:**`).
+- Treat statuses `Open`, `In Progress`, and `Blocked` as actionable; skip entries marked `Done` unless a reviewer states otherwise.
+- Present actionable IDs with their titles (and priority when present) and ask which to execute using the `fix <ID> [<ID> ...]` command pattern (example: `fix T-002 T-005`).
+- Pause if the user declines to choose, record the deferral, and escalate when `ToDo.md` is absent or malformed.
+- Log the intake timestamp, the parsed file path, and the selected IDs before doing any implementation work.
+
+## Reporting
+Document open questions, policy gaps, and assumptions alongside deliverables so maintainers can strengthen the shared guidelines without inflating future prompts.
+
+

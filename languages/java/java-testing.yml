@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: JAVA-TEST-001
+    level: MUST
+    text: "Follow `../../common/tdd_bdd.yml` before applying Java-specific testing practices."
+  - id: JAVA-TEST-002
+    level: MUST
+    text: "Use JUnit 5 for new unit and integration tests unless otherwise specified."
+  - id: JAVA-TEST-003
+    level: MUST
+    text: "Mock external systems using dedicated test doubles instead of shared fixtures."
+  - id: JAVA-TEST-004
+    level: SHOULD
+    text: "Name tests to describe behaviour under test and expected outcome."
+  - id: JAVA-TEST-005
+    level: MUST
+    text: "Fail tests on unchecked exceptions rather than catching them silently."
+  - id: JAVA-TEST-006
+    level: SHOULD
+    text: "Tag slow tests so pipelines can isolate or parallelise them."
+

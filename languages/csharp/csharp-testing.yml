@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: CSHARP-TEST-001
+    level: MUST
+    text: "Follow `../../common/tdd_bdd.yml` before applying C#-specific testing practices."
+  - id: CSHARP-TEST-002
+    level: MUST
+    text: "Use xUnit or the team-standard framework for new tests."
+  - id: CSHARP-TEST-003
+    level: SHOULD
+    text: "Isolate external dependencies with test doubles or in-memory providers."
+  - id: CSHARP-TEST-004
+    level: MUST
+    text: "Assert on behavioural outcomes rather than implementation details."
+  - id: CSHARP-TEST-005
+    level: SHOULD
+    text: "Apply data-driven tests for permutations instead of duplicating logic."
+  - id: CSHARP-TEST-006
+    level: MUST
+    text: "Keep unit tests deterministic and independent of system time or locale."
+

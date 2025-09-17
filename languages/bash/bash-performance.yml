@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: BASH-PERF-001
+    level: MUST
+    text: "Apply `../../common/performance.yml` budgets and practices before Bash-specific optimisations."
+  - id: BASH-PERF-002
+    level: SHOULD
+    text: "Prefer built-in shell operations over spawning subprocesses in loops."
+  - id: BASH-PERF-003
+    level: MUST
+    text: "Avoid parsing large data sets with naive while-read loops without considering performance."
+  - id: BASH-PERF-004
+    level: SHOULD
+    text: "Batch filesystem operations when manipulating many files."
+  - id: BASH-PERF-005
+    level: SHOULD
+    text: "Use `set -e` judiciously to prevent wasted work on failure."
+  - id: BASH-PERF-006
+    level: MAY
+    text: "Leverage parallel utilities like `xargs -P` when safe and beneficial."
+

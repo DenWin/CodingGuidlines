@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: SQL-PERF-001
+    level: MUST
+    text: "Apply `../../common/performance.yml` budgets and practices before database-specific optimisations."
+  - id: SQL-PERF-002
+    level: MUST
+    text: "Review query execution plans for regressions before release."
+  - id: SQL-PERF-003
+    level: SHOULD
+    text: "Use set-based operations instead of row-by-row processing when possible."
+  - id: SQL-PERF-004
+    level: MUST
+    text: "Avoid long-running transactions that hold locks unnecessarily."
+  - id: SQL-PERF-005
+    level: SHOULD
+    text: "Monitor key performance metrics such as buffer cache hit ratio and wait stats."
+  - id: SQL-PERF-006
+    level: MAY
+    text: "Utilise partitioning or sharding when data volume exceeds single-instance limits."
+

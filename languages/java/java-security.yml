@@ -1,0 +1,18 @@
+version: 0.0.1
+rules:
+  - id: JAVA-SEC-001
+    level: MUST
+    text: "Apply `../../common/compliance.yml` controls before Java-specific security measures."
+  - id: JAVA-SEC-002
+    level: MUST
+    text: "Use parameterised queries or ORM features to prevent SQL injection."
+  - id: JAVA-SEC-003
+    level: MUST
+    text: "Validate and sanitise all external inputs before processing."
+  - id: JAVA-SEC-004
+    level: SHOULD
+    text: "Prefer the Java Cryptography Architecture over custom crypto implementations."
+  - id: JAVA-SEC-005
+    level: SHOULD
+    text: "Enable secure defaults such as HTTP security headers and TLS enforcement."
+

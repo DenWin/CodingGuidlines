@@ -1,0 +1,21 @@
+version: 0.0.1
+rules:
+  - id: PS-STYLE-001
+    level: MUST
+    text: "Apply `../../common/base.yml` guidance before PowerShell-specific style conventions."
+  - id: PS-STYLE-002
+    level: MUST
+    text: "Use PascalCase for functions and camelCase for variables."
+  - id: PS-STYLE-003
+    level: MUST
+    text: "Declare script parameters with `param()` blocks at the top of the file."
+  - id: PS-STYLE-004
+    level: SHOULD
+    text: "Prefer advanced functions with CmdletBinding for reusable modules."
+  - id: PS-STYLE-005
+    level: SHOULD
+    text: "Avoid aliases in scripts; use full cmdlet names for clarity."
+  - id: PS-STYLE-006
+    level: MUST
+    text: "Set `Set-StrictMode -Version Latest` when the script supports it."
+

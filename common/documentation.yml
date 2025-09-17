@@ -1,0 +1,30 @@
+version: 0.0.1
+rules:
+  - id: DOC-001
+    level: MUST
+    text: "Update documentation alongside code changes that alter behaviour."
+  - id: DOC-002
+    level: SHOULD
+    text: "Keep README files succinct and link to deeper guides when necessary."
+  - id: DOC-003
+    level: MUST
+    text: "Record rationales and trade-offs in human-readable documents rather than prompts."
+  - id: DOC-004
+    level: SHOULD
+    text: "Use diagrams or tables when they clarify complex flows or data models."
+  - id: DOC-005
+    level: SHOULD
+    text: "Ensure onboarding docs stay actionable by revisiting them quarterly."
+  - id: DOC-006
+    level: SHOULD
+    text: "Maintain a repository glossary (for example `docs/glossary.md`) of project abbreviations."
+  - id: DOC-007
+    level: MUST
+    text: "Keep public or protected APIs documented with up-to-date inline comments (Javadoc, XML doc comments, etc.)."
+  - id: DOC-008
+    level: SHOULD
+    text: "Provide and maintain feature-level documentation that explains core use cases without restating API details."
+  - id: DOC-009
+    level: SHOULD
+    text: "Keep documentation navigation aids such as tables of contents, indexes, or link hubs up to date."
+

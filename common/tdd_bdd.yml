@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: TDD-001
+    level: MUST
+    text: "Write failing tests that describe new behaviour before implementing production code."
+  - id: TDD-002
+    level: SHOULD
+    text: "Use the smallest test step that expresses the behaviour change clearly."
+  - id: TDD-003
+    level: MUST
+    text: "Refactor production and test code after the green phase to remove duplication and clarify intent."
+  - id: TDD-004
+    level: SHOULD
+    text: "Automate behavioural specifications using BDD syntax when collaborating across roles."
+  - id: TDD-005
+    level: MUST
+    text: "Keep acceptance tests deterministic and independent of external flaky systems."

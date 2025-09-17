@@ -1,0 +1,17 @@
+version: 0.0.1
+rules:
+  - id: GOV-001
+    level: MUST
+    text: "Propose policy changes via tracked issues or pull requests with explicit scope."
+  - id: GOV-002
+    level: MUST
+    text: "Include impacted YAML files and rationale summaries in every policy change description."
+  - id: GOV-003
+    level: SHOULD
+    text: "Review policy edits with at least one subject matter expert for the affected domain."
+  - id: GOV-004
+    level: MUST
+    text: "Version policy files using incremental rule IDs and document updates in matching READMEs."
+  - id: GOV-005
+    level: SHOULD
+    text: "Validate new or updated policies against sample prompts to ensure clarity and token efficiency."
